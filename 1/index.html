@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta charset="utf-8">
+		
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+		<link href='https://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet' type='text/css'>
+		
+		<title>Devinez le nombre caché</title>
+	</head>
+	
+	<body>
+
+		<div class="container">
+
+			<div class="row">
+			
+				<div class="col-lg-12 col-sm-12 col-xs-12">
+					<h1>Saurez-vous deviner le bon nombre en moins de 39 coups ?</h1>
+
+					<input type="text" id="proposition" placeholder="Saisir un nombre de 1 à 100" />
+					
+				</div>
+				
+			</div>
+
+
+			<div class="row">
+
+				<div class="col-lg-12 col-sm-12 col-xs-12">
+
+					<button class="ghost-button" id="bouton">Tester</button>
+					
+					<div id="resultat">Appuyer sur <strong>Tester</strong> pour voir le résulat
+					
+					</div>	
+					
+				</div>
+	
+			</div>	
+			
+			<div class="row">
+	
+				<div class="col-lg-12 col-sm-12 col-xs-12"><p>Extrait des <em>39 Marches</em> d'Alfred Hitchcock (tombé dans le domaine public).</p>
+				
+				<button class="ghost-button" id="vidpause"><span class="glyphicon glyphicon-pause"></span></button>						
+				
+				</div>
+
+			</div>
+			
+		</div>	
+
+		<!-- film dans le domaine public pour la devinette -->
+	
+		<video autoplay loop poster="video.jpg" id="bgvid">
+			<source src="video.webm" type="video/webm">
+			<source src="video.mp4" type="video/mp4">
+		</video>
+
+		<!-- script -->
+		<script src="js/script.js"></script>
+
+		<!--[si < IE 9]>
+		<script>
+			document.createElement('video');
+		</script>
+		<![endif]-->
+
+	</body>
+
+</html>

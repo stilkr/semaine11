@@ -1,0 +1,115 @@
+/* généralités */
+
+body {
+		width:auto;
+		margin:auto;
+		}
+
+/* textes & alignements des champs & boutons */
+
+h1 {
+		font-family: 'Yellowtail', cursive;
+		font-size:3em;
+		color: #e74c3c;
+		text-align:center;
+		}		
+
+p {
+		margin-top:10em;
+		color: rgba(236, 240, 241,1.0);
+		text-align:left;
+		}
+
+#resultat {
+		font-family: 'Open Sans', sans-serif;
+		color: #27ae60;
+		margin-left:30.5em;
+		margin-top:3em;
+		}
+	
+
+input {
+		color:#e74c3c;
+		border: 2px solid white;
+		border-radius:5px;
+		background-color:transparent;
+		text-align:center;
+		font-weight:bolder;
+		width: 19em;
+		height:3em;
+		margin-top: 10em;
+		margin-left:30em;
+
+		display: inline-block;
+		-webkit-transition: background-color .5s linear;
+		-moz-transition: background-color .5s linear;
+		-ms-transition: background-color .5s linear;
+		-o-transition: background-color .5s linear;
+		transition: background-color .5s linear;
+		}
+
+input:hover, input:active {
+		color:white;
+		background-color:rgba(231, 76, 60,1.0);
+		}
+
+.ghost-button {
+		color: white;
+		background-color:transparent;
+		border: 2px solid white;
+		font-size: 17px;
+		border-radius:5px;
+		padding: 7px 12px;
+		font-weight: normal;
+		margin: 6px 0;
+		display: inline-block;
+		text-decoration: none;
+		min-width: 120px;
+		font-weight: 400px;
+		display: inline-block;
+		-webkit-transition: background-color .5s linear;
+		-moz-transition: background-color .5s linear;
+		-ms-transition: background-color .5s linear;
+		-o-transition: background-color .5s linear;
+		transition: background-color .5s linear;
+		}
+
+.ghost-button:hover, .ghost-button:active {
+		color:white;
+		background-color:rgba(39, 174, 96,1.0);
+		}
+
+#bouton {
+		margin-left:24.8em;
+		width: 15.5em;
+		}
+
+
+/* propriétés de la vidéo */
+
+video#bgvid { 
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		z-index: -100;
+		-ms-transform: translateX(-50%) translateY(-50%);
+		-moz-transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		transform: translateX(-50%) translateY(-50%);
+		background: url(video.jpg) no-repeat;
+		background-size: cover; 
+		transition: 1s opacity;
+		}
+
+.stopfade { 
+		opacity: .5; 
+		}
+
+/* pour IE */
+video {
+		display: block;
+		}
