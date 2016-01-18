@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta charset="utf-8">
+		
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+		 <link rel="stylesheet" type="text/css" href="css/style.css" />
+		
+		<title>Pierre, Feuille, Ciseaux</title>
+	</head>
+	
+	<body>
+	
+	<h1>Chiche de gagner à Pierre, Feuille, Ciseaux<br /> face à un ordinateur !</h1>
+	
+		<div class="container">
+			<div class="row">
+		
+	<!-- début menu -->				
+			<div class="col-lg-6 col-md-6-col-sm-12 col-xs-12">
+				<select id="choixJoueur">
+					<option value= 'pierre' onclick="shifumi('pierre')"><span class="glyphicon glyphicon-globe"></span> Pierre</option>
+					<option value= 'feuille' onclick="shifumi('feuille')"><span class="glyphicon glyphicon-file"></span> Feuille</option>
+					<option value= 'ciseaux' onclick="shifumi('ciseaux')"><span class="glyphicon glyphicon-scissors"></span> Ciseaux</option>
+				</select>
+			</div>
+	<!-- fin menu -->
+
+	<!-- début score -->		
+			<div id="score" class="col-lg-6 col-md-6-col-sm-12 col-xs-12">				
+				<p>Pressez sur Go ! pour jouer contre l'ordinateur</p>			
+			</div>		
+			
+			<div class="col-lg-offset-6">
+				<button id="go" type="button" class="btn btn-warning" onclick="bigBrother()">Go !</button>
+			</div>		
+	<!-- fin score -->	
+	
+			</div>				
+		</div>		
+	
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+	
+</html>
